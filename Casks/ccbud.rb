@@ -1,9 +1,9 @@
 cask "ccbud" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.0.9"
-  sha256 arm:   "efb75ace37be85e0db297b09df295577839145ecc559104318736f5f5506ec6f",
-         intel: "f603752f6d7f686240a59e061de533b5cb5ffe83f23e72eccec95eef7caab3d2"
+  version "1.0.10"
+  sha256 arm:   "c5a4599225687302d81e6ab711911cf478b35b83e2fd51076f4a002f5270114c",
+         intel: "208468abae9c6e721c13f245c3b616ad8f6fd229ec1690ce1fe81df71b0621a8"
 
   url "https://github.com/ccbud/ccbud/releases/download/v#{version}/ccbud-#{version}-mac-#{arch}.dmg",
       verified: "github.com/ccbud/ccbud/"
