@@ -1,10 +1,11 @@
 cask "ccbud" do
-  arch arm: "arm64", intel: "x64"
+  arch arm: "aarch64", intel: "x64"
 
   version "1.1.1"
-  sha256 :no_check
+  sha256 arm:   "6064e0e3d0ed8627fe6389cc96d8dfc0d7a7c86ce0fbc36c46ab5596e3c98b6d",
+         intel: "5d89177730354e5f4776d2aa83df103e5f18fc6262bedbaf8285f268537afc07"
 
-  url "https://github.com/ccbud/ccbud/releases/download/v#{version}/ccbud-#{version}-mac-#{arch}.dmg",
+  url "https://github.com/ccbud/ccbud/releases/download/v#{version}/ccbud_#{version}_#{arch}.dmg",
       verified: "github.com/ccbud/ccbud/"
   name "ccbud"
   desc "Claude Code Gateway — proxy Claude Code to any Anthropic-compatible provider"
