@@ -1,17 +1,17 @@
 cask "ccbud" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.1.6"
-  sha256 arm:   "0e6c8c7d1704dc40001d53d70817545372aae4b454c5f02a55f2a5b48da01178",
-         intel: "0a575d4a7acbd5f32f21a0ae32534393f5f37fb291091335b265fab81f65de9b"
+  version "1.2.0"
+  sha256 arm:   "352f0d2a59fd0d56a9bb342b7a5957ce7c5f1fb4b1fbdf356e09fdbded968745",
+         intel: "aefca74fdc4f21341af7321d4a0f6e2a0a4e91ba0c3f72e618abc8138098725b"
 
   url "https://github.com/ccbud/ccbud/releases/download/v#{version}/ccbud_#{version}_#{arch}.dmg",
       verified: "github.com/ccbud/ccbud/"
   name "ccbud"
-  desc "Claude Code Gateway — proxy Claude Code to any Anthropic-compatible provider"
+  desc "Coding CLI buddy — Claude Code gateway plus Claude Code/Codex session browser"
   homepage "https://github.com/ccbud/ccbud"
 
-  # ccbud applies JS-only releases in place (in-app hot update); `brew upgrade` handles the rest.
+  # ccbud can update itself in-app; Homebrew handles normal cask upgrades.
   auto_updates true
   depends_on macos: :big_sur
 
