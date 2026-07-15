@@ -1,21 +1,21 @@
 cask "ccbud" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.3.4"
-  sha256 arm:   "ecc80ac8fb52a78cae9ba1ea5fe9edf8dfd06f544a08f0d55e738c0ee9f9d2e8",
-         intel: "305c5fb8ce2622e0e3dc587da7b1efdc2bd80b8258fb9a834b3a23bfe488c5a6"
+  version "1.3.5"
+  sha256 arm:   "79c93018d186e5dee4b22e94380f379d0f29bb43083060734dd334d4480a6454",
+         intel: "a2a7fdf617ff605a6117fe405c94b0d0b79cd5813683c34fa6b66af76270dd2e"
 
-  url "https://github.com/ccbud/ccbud/releases/download/v#{version}/CCBuddy_#{version}_#{arch}.dmg",
+  url "https://github.com/ccbud/ccbud/releases/download/v#{version}/CC.Buddy_#{version}_#{arch}.dmg",
       verified: "github.com/ccbud/ccbud/"
-  name "CCBuddy"
-  desc "CCBuddy — Claude Code gateway plus Claude Code/Codex session browser"
+  name "CC Buddy"
+  desc "CC Buddy — Claude Code gateway plus Claude Code/Codex session browser"
   homepage "https://github.com/ccbud/ccbud"
 
-  # CCBuddy can update itself in-app; Homebrew handles normal cask upgrades.
+  # CC Buddy can update itself in-app; Homebrew handles normal cask upgrades.
   auto_updates true
   depends_on macos: :big_sur
 
-  app "CCBuddy.app"
+  app "CC Buddy.app"
 
   zap trash: [
     "~/Library/Application Support/ccbud",
